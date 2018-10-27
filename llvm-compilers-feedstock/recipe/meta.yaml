@@ -80,6 +80,7 @@ source:
   - url: http://{{ releases_url }}.llvm.org/{{ version_dir }}/libcxx-{{ version }}.src.tar.xz
     sha256: {{ libcxx_sha256 }}
     folder: projects/libcxx
+    patches: 0001-If-libc-abi-library-is-given-use-it-to-reexport.patch
   - url: http://{{ releases_url }}.llvm.org/{{ version_dir }}/libcxxabi-{{ version }}.src.tar.xz
     sha256: {{ libcxxabi_sha256 }}
     folder: projects/libcxxabi
